@@ -1,7 +1,7 @@
 # U64-DCS-DiscordBot
 A Discord bot installed on a server you want to be able to manage the apps on. This bot is targetted at Windows and primarily DCS servers and their functions. 
 
-Setup a DCS Dedicated Server Guide can be found [here]()
+Setup a DCS Dedicated Server Guide can be found [here](https://github.com/NZCypher819/U64DCSDiscord/blob/master/DCS-Server-Setup-Guide.md)
 
 Set the configuration settings at the top of the u64-dcs-discordbot.js file and run in Node JS. 
 
