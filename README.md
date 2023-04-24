@@ -56,9 +56,9 @@ Heres what the variables do:
 Easy to do, just add as many of the apps you want but adding lines in the config.js file as per below. It appears that the appexec can be case-sensitive so make sure you match the case of the actual file. Also make sure the last App in the list doesnt have a comma at the end.
 
     apps: [
-        {appname: "DCS", appexec: 'DCS.exe', path: 'bin\\', rootfolder: 'C:\\Program Files\\Eagle Dynamics\\DCS World OpenBeta Server\\', startup: 'DCS_updater.exe', update: 'DCS_updater.exe --quiet update @openbeta'}, 
+        {appname: "DCS", appexec: 'DCS.exe', path: 'bin\\', rootfolder: 'C:\\Program Files\\Eagle Dynamics\\DCS World OpenBeta Server\\', startup: 'DCS_updater.exe', update: 'DCS_updater.exe', updateargs: '--quiet update @openbeta'}, 
         {appname: "SRS", appexec: "SR-Server.exe", path: '', rootfolder: 'C:\\Program Files\\DCS-SimpleRadio-Standalone\\', startup: '', update: ''},
-        {appname: "Your App", appexec: "YourApp.exe", path: '', rootfolder: 'C:\\Program Files\\YourApp\\', startup: '', update: ''} 
+        {appname: "Your App", appexec: "YourApp.exe", path: '', rootfolder: 'C:\\Program Files\\YourApp\\', startup: '', update: '', updateargs: ''} 
     ]
 
 Below is what each part of the above array does. 
@@ -68,7 +68,8 @@ Below is what each part of the above array does.
         path: Sometimes the root folder doesnt hold all the executables, so in the above example DCS.exe is actually in the bin folder. 
         rootfolder: Root folder of the app. 
         startup: Sometimes the startup file is different to the appexec. In the above example DCS_updater.exe is the startup file.
-        update: Putting something in here enables a update script to be run. In the above example 'DCS_updater.exe --quiet update @openbeta' is the update command to run it in quiet mode.
+        update: Putting something in here enables a update script to be run. In the above example 'DCS_updater.exe' is the update executable.
+        updateargs: is the commandline arguments for the updater executable. In the above example '--quiet update @openbeta' is the commandline arguments for the updater executable making it a silent (no prompts) update.
 
 # Logging
 Logfiles are written to u64bot-date.log. And reside in the same directory as the main bot. Log files are suppose to rotate every day but if they dont then.... its to do with the way Node JS processes dates. Will fix later. 
