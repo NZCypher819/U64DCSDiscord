@@ -3,7 +3,7 @@ A Discord bot installed on a server you want to be able to manage the apps on. T
 
 Setup a DCS Dedicated Server Guide can be found [here](https://github.com/NZCypher819/U64DCSDiscord/blob/master/DCS-Server-Setup-Guide.md)
 
-Set the configuration settings at the top of the u64-dcs-discordbot.js file and run in Node JS. 
+Set the configuration settings at the top of the config.js file and run in Node JS. 
 
 The bot also has a autodelete feature as well, which will delete messages in the target discord channel after a preset time. This autodelete time is configurable.
 
