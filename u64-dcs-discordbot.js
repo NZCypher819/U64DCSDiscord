@@ -374,31 +374,7 @@ client.on('messageCreate', (message) => {
 
         // Add more stuff here.
         
-        // ======================================================================================================================= 
-        // Dibzter's easter eggs. 
-        // ======================================================================================================================= 
-        // If Dibzter trys to do something, make sure he knows he gets a inspriational qoute.
-        if (message.member == 354762080211173376){
-          let arr = [
-            "Lol what a penis", 
-            "Oh good, the muppet is back", 
-            "Oh Jez and stuff, this guys just hard work",
-            "*sigh*",
-            "Give ya balls a tug",
-            "Tit fucker!",
-            "Sticks are amazing",
-            "*cough* EAD *cough", 
-            "Titty sprinkles",
-            "https://tenor.com/view/boobs-funny-gif-14839672",
-            "https://tenor.com/view/letterkenny-marinate-gimme-a-minute-gif-17572765",
-            "https://tenor.com/view/wayne-letterkenny-provoke-katys-big-tarts-mad-gif-26566969",
-            "https://tenor.com/view/stickman-jumping-jump-funny-stickman-stickman-penis-gif-11927660",
-            "https://tenor.com/view/cringe-eeee-gif-24636179"
-          ];
-          let randomIndex = Math.floor(Math.random() * arr.length);
-          let randomQuote = arr[randomIndex];   
-          client.channels.cache.get(config.targetChannel).send(randomQuote);
-        };
+       
     };
 });
 
